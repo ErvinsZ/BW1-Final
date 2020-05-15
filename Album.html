@@ -60,6 +60,7 @@
     width: 100%;
     min-width: 50px;  
     max-width: 150px;
+    
 }
 
 footer{
@@ -72,10 +73,14 @@ footer{
 footer .container1 .row .btnClass .btn{
     background-color: rgb(53, 52, 52);
     border: 0px;
+    outline:none !important;
+    border:none;
     }
 footer .container1 .row .secondbtnClass .btn{
     background-color: rgb(53, 52, 52);
     border: 0px;
+    outline:none !important;
+    border:none;
     }
 #anchorWrapper{
     display: none !important;
@@ -116,7 +121,7 @@ footer .container1 .row .secondbtnClass .btn{
 
 /* SeekBar */
 #seek-bar{
-    width: 250px;
+    width: 500px;
     height: 5px;
     background-color:gray;
     display: flex;
@@ -126,13 +131,13 @@ footer .container1 .row .secondbtnClass .btn{
 }
 #fill{
     height: 5px;
-    background-color:royalblue;
+    background-color:green;
     border-radius: 20px;
 }
 #handle{
-    width: 8px;
-    height: 8px;
-    background-color:royalblue;
+    width: 5px;
+    height: 5px;
+    background-color:rgb(78, 76, 76);
     border-radius: 50%;
     margin-left: -5px;
     transform: scale(2);
@@ -363,7 +368,7 @@ footer .container1 .row .secondbtnClass .btn{
                     <button type="button" class="btn btn-info" id="shuffle"><i class="fa fa-random fa-lg"></i></button>
                     <button type="button" class="btn btn-info" id="pre" onclick="pre()">  <i class="fa fa-step-backward fa-lg"> </i></button>
                     <!-- <img src="spotifyAssets/playicon.png" width="50px" style="background-color: grey;"> -->
-                    <button type="button" class="btn btn-info" id="play" onclick=" playOrPauseSong();"> <i class="fa fa-play-circle fa-lg"> </i></button>
+                    <button type="button" style="outline:none !important; border:none!important;" class="btn btn-info" id="play" onclick=" playOrPauseSong();"> <i class="fa fa-play-circle fa-lg"> </i></button>
                     <button type="button" class="btn btn-info" id="next" onclick="next()"> <i class="fa fa-step-forward fa-lg"> </i></button>
                     <button type="button" class="btn btn-info"> <i class="fa fa-redo-alt"> </i><br></button>
                     <button type="button" class="btn btn-info"><i class="fa fa-random fa-lg"></i></button>
@@ -372,7 +377,7 @@ footer .container1 .row .secondbtnClass .btn{
                     </div>
                     </div>
 
-                    <div class="ml-5" id="seek-bar">
+                    <div class="ml-5" id="seek-bar" style="margin-left:140px !important;">
                         <div id="fill"></div>
                         <div id="handle"></div>
                     </div>
